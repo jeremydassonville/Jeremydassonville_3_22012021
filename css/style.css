@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* Variables */
+img {
+  width: 80%;
+}
+
+/* Page générale */
+body {
+  font-family: "Roboto";
+  margin: 0px;
+}
+
+/* Header */
+header {
+  border-bottom: 3px solid #cccccc;
+  padding-bottom: 10px;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  margin-top: 20px;
+}
+
+/* Localisation */
+.localisation {
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  background-color: #cecece;
+  font-size: 17px;
+}
+.localisation .fas {
+  margin-right: 5px;
+}
+
+/* Titre */
+.cont-titre {
+  background-color: #e7e7e7;
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+.cont-titre h1 {
+  font-size: 28px;
+  text-align: center;
+}
+.cont-titre p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.cont-titre__btn p {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #FF79DA;
+  border-radius: 30px;
+  padding: 10px;
+  width: 70%;
+}
+
+/*# sourceMappingURL=style.css.map */

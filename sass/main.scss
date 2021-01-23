@@ -10,8 +10,8 @@ $color-tertiary : #99E2D0;
     margin: 0 auto;
 }
 
-@mixin center_title {
-    margin: 0 20px;    
+@mixin center_title($verticale, $horizontale) {
+    margin: $verticale $horizontale;    
 }
 
 img {
@@ -45,7 +45,7 @@ header {
     margin: 0px;
     padding: 10px;
     background-color: rgb(223, 223, 223);
-    font-size: 17px;
+    font-size: 15px;
     & .fas {
         margin-right: 5px;
     }
@@ -55,30 +55,35 @@ header {
 
 .cont-titre {
     background-color: rgb(241, 241, 241);
-    padding-top: 1px;
     padding-bottom: 40px;
     & h1 {
-        padding-top: 35px;
-        font-size: 24px;
+        padding-top: 30px;
+        font-size: 21px;
         text-align: center;
-        @include center_title();
+        $verticale: 0px;
+        $horizontale: 40px;
+        @include center_title($verticale, $horizontale);
     }
     & p {
-        padding-top: 20px;
+        padding-top: 10px;
         padding-bottom: 20px;
-        font-size: 13px;
+        font-size: 14px;
         text-align: center;
-        @include center_title();
+        font-weight: lighter;
+        $verticale: 0px;
+        $horizontale: 20px;
+        @include center_title($verticale, $horizontale);
     }
 }
 
 .cont-titre__btn p{
     color: white;
-    font-size: 17px;
+    font-weight: normal;
+    font-size: 14px;
     background: linear-gradient($color-secondary,$color-primary);
     border-radius: 30px;
     padding: 14px;
-    width: 60%;
+    width: 50%;
     @include center_content;
     box-shadow: 0px 5px 10px rgb(184, 184, 184);
 }

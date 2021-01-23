@@ -29,7 +29,7 @@ header img {
   margin: 0px;
   padding: 10px;
   background-color: #dfdfdf;
-  font-size: 17px;
+  font-size: 15px;
 }
 .localisation .fas {
   margin-right: 5px;
@@ -38,30 +38,31 @@ header img {
 /* Titre */
 .cont-titre {
   background-color: #f1f1f1;
-  padding-top: 1px;
   padding-bottom: 40px;
 }
 .cont-titre h1 {
-  padding-top: 35px;
-  font-size: 24px;
+  padding-top: 30px;
+  font-size: 21px;
   text-align: center;
-  margin: 0 20px;
+  margin: 0px 40px;
 }
 .cont-titre p {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
-  margin: 0 20px;
+  font-weight: lighter;
+  margin: 0px 20px;
 }
 
 .cont-titre__btn p {
   color: white;
-  font-size: 17px;
+  font-weight: normal;
+  font-size: 14px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
   padding: 14px;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   box-shadow: 0px 5px 10px #b8b8b8;
 }

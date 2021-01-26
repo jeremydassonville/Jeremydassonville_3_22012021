@@ -1,0 +1,16 @@
+@mixin center_content {
+    margin: 0 auto;
+}
+
+@mixin center_title($verticale, $horizontale) {
+    margin: $verticale $horizontale;    
+}
+
+@mixin circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #9356DC;
+    color: white;
+    text-align: center;
+}

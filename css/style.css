@@ -4,11 +4,11 @@ body {
 }
 
 /* Header */
-header {
+.header__accueil {
   border-bottom: 3px solid #cccccc;
   padding-bottom: 10px;
 }
-header img {
+.header__accueil .img__accueil {
   display: block;
   margin: 0 auto;
   width: 130px;
@@ -173,6 +173,80 @@ footer .foot-cont {
 .foot-cont p {
   font-size: 15px;
   margin-top: -8px;
+}
+
+/* PAGE MENU */
+/* Header */
+.header__menu {
+  display: flex;
+  padding: 10px;
+}
+.header__menu .img__menu {
+  width: 130px;
+  margin-left: 55%;
+}
+
+/* Image background */
+.menu__img img {
+  width: 100%;
+}
+
+/* Section menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.menu h2 {
+  font-family: "Shrikhand";
+}
+.menu__nom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.menu__titre {
+  font-size: 12px;
+  border-bottom: 3px solid #99E2D0;
+  width: 15%;
+  margin-bottom: 15px;
+}
+
+.menu__list--border {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  box-shadow: 0px 5px 10px #dad9d9;
+}
+.menu__list--border p {
+  font-weight: lighter;
+}
+
+.menu__list--display {
+  margin: 0 10px;
+}
+.menu__list--display p {
+  margin-top: -10px;
+}
+
+.btn__commander {
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  padding: 1px;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 10px #b8b8b8;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

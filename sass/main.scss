@@ -190,8 +190,10 @@ footer {
     padding: 10px;
     & .img__menu {
         width: 130px;
-        margin-left: 55%;
     }
+}
+.header__center {
+    @include center_content;
 }
 
 /* Image background */

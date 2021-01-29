@@ -3,6 +3,21 @@ body {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a {
+  color: white;
+}
+
+address {
+  font-style: normal;
+  margin-top: -10px;
+  font-size: 15px;
+}
+
 /* Header */
 .header__accueil {
   border-bottom: 3px solid #cccccc;
@@ -183,7 +198,10 @@ footer .foot-cont {
 }
 .header__menu .img__menu {
   width: 130px;
-  margin-left: 55%;
+}
+
+.header__center {
+  margin: 0 auto;
 }
 
 /* Image background */

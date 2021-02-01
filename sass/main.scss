@@ -71,6 +71,8 @@
 
 .cont-nav{
     margin: 0 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
     & h2 {
         font-size: 21px;    
     }
@@ -107,8 +109,10 @@ main {
     padding-bottom: 40px;
     & h2 {
         font-size: 21px;
-        padding-top: 40px;
         margin-left: 10px;
+    }
+    & #restaurants {
+        padding-top: 40px;
     }
 }
 
@@ -189,6 +193,7 @@ footer {
 .header__menu {
     display: flex;
     padding: 10px;
+    margin-top: 10px;
     & .img__menu {
         width: 130px;
     }
@@ -217,7 +222,7 @@ footer {
     &__nom {
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 0 -20px;
         margin-top: -35px;
         background:  rgb(241, 241, 241);
@@ -225,7 +230,16 @@ footer {
     }
     & .far {
         padding-right: 10px;
+        font-size: 20px;
     }
+}
+
+.menu__entrée {
+    margin-bottom: 40px;
+}
+
+.menu__plats {
+    margin-bottom: 40px;
 }
 
 .menu__titre {

@@ -72,6 +72,7 @@ address {
   width: 50%;
   margin: 0 auto;
   box-shadow: 0px 5px 10px #b8b8b8;
+  max-width: 200px;
 }
 
 /* Menu de navigation */
@@ -273,6 +274,36 @@ footer .foot-cont {
   margin: 0 auto;
   box-shadow: 0px 5px 10px #b8b8b8;
   margin-top: 30px;
+  max-width: 200px;
+}
+
+/* Responsive */
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cont-list {
+    width: 30%;
+    max-width: 350px;
+  }
+
+  .cont-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cont-restaurants__capsule {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .cont-restaurants {
+    max-width: 1450px;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

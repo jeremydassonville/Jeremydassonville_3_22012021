@@ -312,6 +312,12 @@ footer {
         max-width: 450px;
         margin: auto;
     }
+
+    footer .foot-cont,footer .foot-title {
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (min-width: 1500px) {
@@ -335,12 +341,6 @@ footer {
 
     #restaurants {
         text-align: center;
-    }
-
-    footer .foot-cont,footer .foot-title {
-        margin-left: 0px;
-        display: flex;
-        justify-content: space-around;
     }
 
     .display__desctop{

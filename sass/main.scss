@@ -145,6 +145,21 @@ main {
         margin-right: 20px;
         font-size: 25px;
     }
+    & .fa-animate{
+        font-size: 25px;
+        position: absolute;
+        right: 20px;
+        opacity: 0;
+        background: linear-gradient(to top,#ff79da,#9356dc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        &:hover {
+            transition: all 450ms;
+            opacity: 1;
+
+        }
+    }
     & .cont-new {
         position: absolute;
         background-color: $color-tertiary;
@@ -188,6 +203,9 @@ footer {
     margin-top: -8px;
 }
 
+/* Annimation */
+
+
 /* PAGE MENU */
 
 /* Header */
@@ -208,7 +226,7 @@ footer {
 
 .menu__img img {
     width: 100%;
-    max-height: 213px;
+    max-height: 350px;
     object-fit: cover;
 }
 
@@ -357,10 +375,6 @@ footer {
         margin: 0;
         margin-top: -35px;
         background: white;
-    }
-
-    .footer__menu {
-        bottom: 0;
     }
 
     main {

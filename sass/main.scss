@@ -379,6 +379,55 @@ footer {
     max-width: 200px;
 }
 
+/* Animation Apparition Menu */
+
+.menu__entrée {
+    animation: spawn 2s both;
+}
+.menu__plats {
+    animation: spawn 2s both;
+}
+.menu__desserts{
+    animation: spawn 2s both;
+}
+
+@keyframes spawn {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.menu__list--border {
+    animation: slideup 1s both;
+}
+
+.menu__list--border:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.menu__list--border:nth-child(3){
+    animation-delay: 0.2s;
+}
+.menu__list--border:nth-child(4){
+    animation-delay: 0.3s;
+}
+
+@keyframes slideup {
+    0%{
+        position: relative;
+        top: 50px;
+    }
+    100%{
+        position: relative;
+        top: 10px;
+    }
+}
+
 /* Responsive */
 
 @media screen and (min-width: 700px ){
@@ -443,12 +492,17 @@ footer {
     .test {
         margin: 0px;
         max-width: none;   
+        
     }
 
     .menu__nom {
         margin: 0;
         margin-top: -35px;
         background: white;
+    }
+
+    .menu__list--border {
+        font-size: 14px;
     }
 
     main {

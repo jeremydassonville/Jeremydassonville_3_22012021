@@ -119,7 +119,7 @@
         padding-bottom: 20px;
         font-size: 14px;
         text-align: center;
-        font-weight: lighter;
+        font-weight: 300;
         $verticale: 0px;
         $horizontale: 20px;
         @include center_title($verticale, $horizontale);
@@ -128,7 +128,7 @@
 
 .cont-titre__btn p{
     color: white;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
     background: linear-gradient(175deg,$color-secondary,$color-primary);
     border-radius: 30px;
@@ -246,7 +246,7 @@ main {
     }
     & p {
         margin-top: 5px;
-        font-weight: 100;
+        font-weight: 300;
     }
 
 }
@@ -261,7 +261,7 @@ footer {
     padding-bottom: 15px;
     & h4 {
         font-family: 'Shrikhand';
-        font-weight: lighter;
+        font-weight: 300;
     }
     & .foot-title {
         margin-left: 20px;
@@ -347,6 +347,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    width: 100%;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -354,12 +355,23 @@ footer {
     box-shadow: 0px 5px 10px rgb(218, 217, 217);
     cursor: pointer;
     & p {
-        font-weight: lighter;
+        font-weight: 300;
     }
 }
 
+.menu__list--price {
+    margin: 0 10px;
+}
+
+.menu__list--display ,.menu__list--display p, .menu__list--display h4{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+} 
+
 .menu__list--display {
     margin: 0 10px;
+    width: 60%;
     & p {
         margin-top: -10px;
     }
@@ -418,7 +430,7 @@ footer {
 
 .btn__commander {
     color: white;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 14px;
     text-align: center;
     background: linear-gradient(175deg,$color-secondary,$color-primary);
@@ -545,7 +557,6 @@ footer {
     .test {
         margin: 0px;
         max-width: none;   
-        
     }
 
     .menu__nom {
@@ -554,9 +565,6 @@ footer {
         background: white;
     }
 
-    .menu__list--border {
-        font-size: 14px;
-    }
 
     main {
         background-color: white;

@@ -397,14 +397,12 @@ footer {
 @keyframes slideleft {
 
     100%{
-        width: 20%;
+        width: 30%;
         opacity: 1;
     }
 }
 
 .fa-check{
-    margin-left: 30%;
-    margin-bottom: 17px;
     font-size: 20px;
     border-radius: 50%;
     padding: 5px;
@@ -412,6 +410,11 @@ footer {
     color: $color-tertiary;
     transition: transform 350ms;
 
+}
+
+#validation__logo {
+    text-align: center;
+    padding-bottom: 17px;
 }
 
 .menu__list--border:hover .fa-check{
@@ -565,8 +568,13 @@ footer {
         background: white;
     }
 
-
     main {
         background-color: white;
+    }
+
+    /* Page Menu */
+
+    .menu__entrée, .menu__desserts, .menu__plats {
+        width: 25%;
     }
 }

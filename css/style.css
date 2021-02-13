@@ -401,19 +401,22 @@ footer .foot-cont {
 
 @keyframes slideleft {
   100% {
-    width: 20%;
+    width: 30%;
     opacity: 1;
   }
 }
 .fa-check {
-  margin-left: 30%;
-  margin-bottom: 17px;
   font-size: 20px;
   border-radius: 50%;
   padding: 5px;
   background-color: white;
   color: #99E2D0;
   transition: transform 350ms;
+}
+
+#validation__logo {
+  text-align: center;
+  padding-bottom: 17px;
 }
 
 .menu__list--border:hover .fa-check {
@@ -570,6 +573,11 @@ footer .foot-cont {
 
   main {
     background-color: white;
+  }
+
+  /* Page Menu */
+  .menu__entrée, .menu__desserts, .menu__plats {
+    width: 25%;
   }
 }
 

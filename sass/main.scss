@@ -125,15 +125,20 @@
 
 .cont-titre__btn p{
     color: white;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 14px;
     background: linear-gradient(175deg,$color-secondary,$color-primary);
     border-radius: 30px;
     padding: 14px;
     width: 50%;
     @include center_content;
-    box-shadow: 0px 5px 10px rgb(184, 184, 184);
+    box-shadow: 5px 5px 10px rgb(184, 184, 184);
     max-width: 200px;
+}
+
+.cont-titre__btn p:hover {
+    background: linear-gradient(175deg,#ff85dd,#975ddf);;
+    box-shadow: 5px 5px 10px rgb(163, 163, 163); 
 }
 
 /* Menu de navigation */
@@ -459,11 +464,14 @@ footer {
     padding: 1px;
     width: 50%;
     @include center_content;
-    box-shadow: 0px 5px 10px rgb(184, 184, 184);
+    box-shadow: 5px 5px 10px rgb(184, 184, 184);
     margin-top: 30px;
     max-width: 200px;
 }
-
+.btn__commander:hover {
+    background: linear-gradient(175deg,#ff85dd,#975ddf);;
+    box-shadow: 5px 5px 10px rgb(163, 163, 163); 
+}
 /* Animation Apparition Menu */
 
 

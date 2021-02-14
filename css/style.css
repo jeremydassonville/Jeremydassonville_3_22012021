@@ -39,17 +39,14 @@ address {
   animation: opacity 2s both;
 }
 
-.main-accueil, .footer-accueil {
-  opacity: 0;
-  animation: opacityreverse 3s both;
+.main-accueil, .footer-accueil, .header__accueil, .cont-nav, .localisation, .cont-titre {
+  opacity: 0.2;
+  animation: opacityreverse 2s both;
 }
 
 @keyframes opacityreverse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
+  70% {
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
@@ -228,25 +225,46 @@ main #restaurants {
   align-items: center;
 }
 .cont-restaurants .far {
-  margin-right: 20px;
-  font-size: 25px;
+  font-size: 38px;
 }
-.cont-restaurants .far:hover {
-  display: none;
-}
-.cont-restaurants .fa-animate {
-  font-size: 25px;
-  position: absolute;
-  right: 20px;
+.cont-restaurants .heart {
+  background: linear-gradient(45deg, #9356dc, #ff79da);
+  display: inline-block;
+  height: 18px;
+  position: relative;
+  right: 32px;
+  bottom: 3px;
+  width: 18px;
+  transform: scale(0.8);
   opacity: 0;
-  background: linear-gradient(to top, #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  border-radius: 2px;
 }
-.cont-restaurants .fa-animate:hover {
-  transition: all 450ms;
+.cont-restaurants .heart:hover {
+  transition: all 250ms;
   opacity: 1;
+  transform: scale(1);
+  transform: rotate(-45deg);
+}
+.cont-restaurants .heart:hover .far {
+  color: #9356DC;
+}
+.cont-restaurants .heart:before,
+.cont-restaurants .heart:after {
+  content: "";
+  border-radius: 50%;
+  height: 18px;
+  position: absolute;
+  width: 18px;
+}
+.cont-restaurants .heart:before {
+  background: linear-gradient(190deg, #ff79da, #9356dc);
+  top: -10px;
+  left: 0;
+}
+.cont-restaurants .heart:after {
+  background: linear-gradient(240deg, #ff79da, #9356dc);
+  left: 10px;
+  top: 0;
 }
 .cont-restaurants .cont-new {
   position: absolute;
@@ -288,7 +306,6 @@ footer .foot-cont {
   margin-top: -8px;
 }
 
-/* Annimation */
 /* PAGE MENU */
 /* Header */
 .header__menu {
@@ -401,7 +418,7 @@ footer .foot-cont {
 
 @keyframes slideleft {
   100% {
-    width: 30%;
+    width: 100px;
     opacity: 1;
   }
 }
@@ -448,31 +465,6 @@ footer .foot-cont {
 }
 
 /* Animation Apparition Menu */
-.menu__titre {
-  animation: slideup 0.4s both;
-  animation-delay: 0.1s;
-}
-
-.menu__entrée {
-  animation: spawn 1s both;
-}
-
-.menu__plats {
-  animation: spawn 2s both;
-}
-
-.menu__desserts {
-  animation: spawn 3s both;
-}
-
-@keyframes spawn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .menu__list--border {
   animation: slideup 0.4s ease-in-out both;
   animation-delay: 0.1s;
@@ -494,10 +486,12 @@ footer .foot-cont {
   0% {
     position: relative;
     top: 30px;
+    transform: scale(0);
   }
   100% {
     position: relative;
     top: 10px;
+    transform: scale(1);
   }
 }
 /* Responsive */

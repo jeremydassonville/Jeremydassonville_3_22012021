@@ -214,21 +214,21 @@ main {
         align-items: center;
     }
     & .far {
-        font-size: 38px;
+        font-size: 36px;
     }
     .heart {
-        background: linear-gradient(45deg,#9356dc, #ff79da);
+        background-color: #9c56f3;
         display: inline-block;
         height: 18px;
         position: relative;
-        right: 32px;
+        right: 31px;
         bottom: 3px;
         width: 18px;
         transform: scale(0.8);
         opacity: 0;
         border-radius: 2px;
         &:hover {
-            transition: all 250ms;
+            transition: all 350ms;
             opacity: 1;
             transform: scale(1);
             transform: rotate(-45deg);
@@ -248,14 +248,14 @@ main {
       }
       
       .heart:before {
-        background: linear-gradient(190deg,#ff79da,#9356dc);
-        top: -10px;
+        background: linear-gradient(205deg,#ff79da,#9356dc);
+        top: -9px;
         left: 0;
       }
       
       .heart:after {
         background: linear-gradient(240deg,#ff79da,#9356dc);
-        left: 10px;
+        left: 9px;
         top: 0;
       }    
 
@@ -334,6 +334,7 @@ footer {
     margin: 0 20px;
     & h2 {
         font-family: 'Shrikhand';
+        font-size: 20px;
     }
     &__nom {
         display: flex;
@@ -345,11 +346,54 @@ footer {
         border-radius: 30px 30px 0px 0px;
     }
     & .far {
-        padding-right: 10px;
-        font-size: 20px;
+        font-size: 25px;
     }
     
 }
+
+.heart__menu {
+    background-color: #9c56f3;
+    display: inline-block;
+    height: 13px;
+    position: relative;
+    right: 23px;
+    bottom: 2px;
+    width: 14px;
+    transform: scale(0.8);
+    opacity: 0;
+    border-radius: 2px;
+    &:hover {
+        transition: all 250ms;
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(-45deg);
+        cursor: pointer;
+        .far {
+            color: $color-primary;
+        }
+    }
+  }
+  
+  .heart__menu:before,
+  .heart__menu:after {
+    content: "";
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+  }
+  
+  .heart__menu:before {
+    background: linear-gradient(205deg,#ff79da,#9356dc);
+    top: -6px;
+    left: 0px;
+  }
+  
+  .heart__menu:after {
+    background: linear-gradient(240deg,#ff79da,#9356dc);
+    left: 7px;
+    top: 1px;
+  }   
 
 .menu__entrée {
     margin-bottom: 40px;
@@ -577,6 +621,11 @@ footer {
 
     main {
         background-color: white;
+    }
+
+    .footer__menu{
+       position: absolute;
+       bottom: 0; 
     }
 
     /* Page Menu */

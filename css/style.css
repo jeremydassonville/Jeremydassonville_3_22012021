@@ -230,14 +230,14 @@ main #restaurants {
   align-items: center;
 }
 .cont-restaurants .far {
-  font-size: 38px;
+  font-size: 36px;
 }
 .cont-restaurants .heart {
-  background: linear-gradient(45deg, #9356dc, #ff79da);
+  background-color: #9c56f3;
   display: inline-block;
   height: 18px;
   position: relative;
-  right: 32px;
+  right: 31px;
   bottom: 3px;
   width: 18px;
   transform: scale(0.8);
@@ -245,7 +245,7 @@ main #restaurants {
   border-radius: 2px;
 }
 .cont-restaurants .heart:hover {
-  transition: all 250ms;
+  transition: all 350ms;
   opacity: 1;
   transform: scale(1);
   transform: rotate(-45deg);
@@ -262,13 +262,13 @@ main #restaurants {
   width: 18px;
 }
 .cont-restaurants .heart:before {
-  background: linear-gradient(190deg, #ff79da, #9356dc);
-  top: -10px;
+  background: linear-gradient(205deg, #ff79da, #9356dc);
+  top: -9px;
   left: 0;
 }
 .cont-restaurants .heart:after {
   background: linear-gradient(240deg, #ff79da, #9356dc);
-  left: 10px;
+  left: 9px;
   top: 0;
 }
 .cont-restaurants .cont-new {
@@ -341,6 +341,7 @@ footer .foot-cont {
 }
 .menu h2 {
   font-family: "Shrikhand";
+  font-size: 20px;
 }
 .menu__nom {
   display: flex;
@@ -352,8 +353,51 @@ footer .foot-cont {
   border-radius: 30px 30px 0px 0px;
 }
 .menu .far {
-  padding-right: 10px;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.heart__menu {
+  background-color: #9c56f3;
+  display: inline-block;
+  height: 13px;
+  position: relative;
+  right: 23px;
+  bottom: 2px;
+  width: 14px;
+  transform: scale(0.8);
+  opacity: 0;
+  border-radius: 2px;
+}
+.heart__menu:hover {
+  transition: all 250ms;
+  opacity: 1;
+  transform: scale(1);
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+.heart__menu:hover .far {
+  color: #9356DC;
+}
+
+.heart__menu:before,
+.heart__menu:after {
+  content: "";
+  border-radius: 50%;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+.heart__menu:before {
+  background: linear-gradient(205deg, #ff79da, #9356dc);
+  top: -6px;
+  left: 0px;
+}
+
+.heart__menu:after {
+  background: linear-gradient(240deg, #ff79da, #9356dc);
+  left: 7px;
+  top: 1px;
 }
 
 .menu__entrée {
@@ -577,6 +621,11 @@ footer .foot-cont {
 
   main {
     background-color: white;
+  }
+
+  .footer__menu {
+    position: absolute;
+    bottom: 0;
   }
 
   /* Page Menu */

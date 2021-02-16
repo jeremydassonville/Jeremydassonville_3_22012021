@@ -1,0 +1,89 @@
+/* Responsive smartphones - tablettes*/
+
+@media screen and (min-width: 700px ){
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    .cont-list {
+        width: 30%;
+        max-width: 350px;
+    }
+
+    .cont-restaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .cont-restaurants__capsule {
+        width: 49%;
+    }
+
+    .test {
+        max-width: 450px;
+        margin: auto;
+    }
+
+    footer .foot-cont,footer .foot-title {
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Responsive laptop */
+
+@media screen and (min-width: 1500px) {
+
+    .cont-restaurants{
+        max-width: 1450px;
+        margin: auto;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .cont-list {
+        margin-left: 40px;
+    }
+
+    .cont-nav h2 {
+        text-align: center;
+    }
+
+    #restaurants {
+        text-align: center;
+    }
+
+    .display__desctop{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .test {
+        margin: 0px;
+        max-width: none;   
+    }
+
+    .menu__nom {
+        margin: 0;
+        margin-top: -35px;
+        background: white;
+    }
+
+    main {
+        background-color: white;
+    }
+
+    .footer__menu{
+       position: absolute;
+       bottom: 0; 
+    }
+
+    /* Page Menu */
+
+    .menu__entrée, .menu__desserts, .menu__plats {
+        width: 25%;
+    }
+}

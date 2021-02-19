@@ -19,7 +19,7 @@
         width: 49%;
     }
 
-    .test {
+    .menu__display{
         max-width: 450px;
         margin: auto;
     }
@@ -61,7 +61,7 @@
         justify-content: space-around;
     }
     
-    .test {
+    .menu__display{
         margin: 0px;
         max-width: none;   
     }
@@ -76,9 +76,8 @@
         background-color: white;
     }
 
-    .footer__menu{
-       position: absolute;
-       bottom: 0; 
+    .footer__menu {
+        margin-top: 40px;
     }
 
     /* Page Menu */

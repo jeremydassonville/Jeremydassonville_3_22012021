@@ -3,13 +3,13 @@
 
 
 .main-accueil, .footer-accueil, .header__accueil, .cont-nav, .localisation, .cont-titre {
-    opacity: 0.2;
+    opacity: 0;
     animation: opacityreverse 2s both;
 }
 
 @keyframes opacityreverse {
     70%{
-        opacity: 0.2;
+        opacity: 0;
     }
     100%{
         opacity: 1;
